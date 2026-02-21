@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Baskerville, "Times New Roman", serif;
+  background: white;
+  color: black;
+}
+
+header {
+  background: #aeccc6;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer {
+  background: #757a79;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.article-card {
+  border-bottom: 1px solid #9ba6a5;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  background: #bbe9db;
+}
+
+.article-image-placeholder {
+  width: 200px;
+  height: 150px;
+  background: #9ba6a5;
+}
+
+.dropdown {
+  width: 100%;
+  background: #aeccc6;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  padding: 1rem;
+  border: 1px solid #9ba6a5;
+}
