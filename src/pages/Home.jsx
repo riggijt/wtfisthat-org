@@ -1,12 +1,20 @@
-import { articles } from "../data/articles";
-import ArticleCard from "../components/ArticleCard";
-
 export default function Home() {
   return (
-    <div>
-      {articles.map((article) => (
-        <ArticleCard key={article.id} article={article} />
-      ))}
-    </div>
+    <main className="page">
+      <header className="header">
+        <h1>WTF Is That</h1>
+        <p>A modern independent news platform</p>
+      </header>
+
+      <section className="article-grid">
+        {[1,2,3,4].map((id) => (
+          <a key={id} href="/article" className="article-card">
+            <div className="image-placeholder"></div>
+            <h2>Article {id}</h2>
+            <p>Short preview text</p>
+          </a>
+        ))}
+      </section>
+    </main>
   );
 }

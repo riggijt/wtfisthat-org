@@ -1,21 +1,18 @@
 import { Routes, Route } from "react-router-dom";
+import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import Article from "./pages/Article";
 import About from "./pages/About";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/article/:id" element={<Article />} />
+        <Route path="/article" element={<Article />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

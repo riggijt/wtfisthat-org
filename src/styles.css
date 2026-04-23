@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: Baskerville, "Times New Roman", serif;
@@ -56,4 +61,25 @@ footer {
 .dropdown-content {
   padding: 1rem;
   border: 1px solid #9ba6a5;
+}
+
+.page {
+  max-width: 900px;
+  margin: auto;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.image-placeholder {
+  height: 150px;
+  background: #9ba6a5;
+  margin-bottom: 1rem;
+}
+
+.article-card:hover {
+  background: #bbe9db;
 }

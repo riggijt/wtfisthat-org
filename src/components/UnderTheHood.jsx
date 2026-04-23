@@ -1,18 +1,24 @@
 import { useState } from "react";
 
-export default function UnderTheHood() {
+export default function Article() {
   const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <button className="dropdown" onClick={() => setOpen(!open)}>
+    <main className="page">
+      <a href="/">← Back</a>
+
+      <h1>Article Title</h1>
+      <p>Article content...</p>
+
+      <button onClick={() => setOpen(!open)}>
         Under the hood
       </button>
+
       {open && (
-        <div className="dropdown-content">
+        <div>
           add Text Here
         </div>
       )}
-    </>
+    </main>
   );
 }
