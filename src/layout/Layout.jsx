@@ -1,16 +1,34 @@
 export default function Layout({ children }) {
   return (
-    <div>
-      <nav style={{ padding: "1rem", background: "#aeccc6" }}>
-        <a href="/" style={{ marginRight: "1rem" }}>Home</a>
-        <a href="/about">About</a>
-      </nav>
+    <div className="site-wrapper">
 
-      {children}
+      <header className="site-header">
+        <div className="nav-inner">
 
-      <footer style={{ background: "#757a79", padding: "1rem", color: "white" }}>
-        © WTFIsThat.org
+          <a href="/" className="header-brand">
+            <img
+              src="/images/mantis3.png"
+              alt="WTF Is That Home"
+              className="header-art"
+            />
+          </a>
+
+          <nav className="main-nav">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+          </nav>
+
+        </div>
+      </header>
+
+      <main className="site-content">
+        {children}
+      </main>
+
+      <footer className="site-footer">
+        <p>© {new Date().getFullYear()} WTFIsThat.org</p>
       </footer>
+
     </div>
   );
 }
