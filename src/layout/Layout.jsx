@@ -15,7 +15,7 @@ export default function Layout({ children }) {
 
           <nav className="main-nav">
             <a href="/">Home</a>
-            <a href="/about">About</a>
+            <a href="/about">About Us</a>
           </nav>
 
         </div>

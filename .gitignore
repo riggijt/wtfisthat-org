@@ -1,4 +1,4 @@
-.gitgit add # Logs
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -7,25 +7,31 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies & build output
 node_modules
 dist
 dist-ssr
-*.local
 
-# Editor directories and files
+# Environment files
+.env
+.env.*
+*.local
+.dev.vars*
+!.dev.vars.example
+!.env.example
+
+# Wrangler / Cloudflare
+.wrangler
+
+# OS files
+.DS_Store
+
+# VS Code / IDE
 .vscode/*
 !.vscode/extensions.json
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# wrangler files
-.wrangler
-.dev.vars*
-!.dev.vars.example
-.env*
-!.env.example

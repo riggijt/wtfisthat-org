@@ -25,10 +25,37 @@ export default function Article() {
         dangerouslySetInnerHTML={{ __html: marked(article.content) }}
       />
 
-      <section className="under-hood">
-        <button onClick={() => setOpen(!open)}>Under the hood</button>
-        {open && <div>{article.underTheHood || "add Text Here"}</div>}
-      </section>
+      <section className="specimen-notes">
+        <button onClick={() => setOpen(!open)}>
+          Specimen Notes
+        </button>
+
+          {open && (
+            <div className="specimen-body">
+              <div className="specimen-inner-header">
+                <div>
+                  <h3>{article.specimenHeading || ""}</h3>
+                </div>
+
+                {article.specimenImage && (
+                  <img
+                    src={article.specimenImage}
+                    alt={article.specimenAlt || "Specimen Notes image"}
+                    className="specimen-image"
+                  />
+                )}
+              </div>
+
+              <div
+                className="specimen-content"
+                dangerouslySetInnerHTML={{
+                  __html: article.specimenNotes || "Add specimen notes here.",
+                }}
+              />
+            </div>
+          )}
+            
+          </section>
     </main>
   );
 }

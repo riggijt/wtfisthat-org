@@ -11,49 +11,155 @@ a {
   text-decoration: none;
 }
 
-.masthead {
-  text-align: center;
-  padding: 4rem 1rem 3rem;
+/* Layout */
+
+.site-wrapper {
+  min-height: 100vh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
   border-bottom: 1px solid #9ba6a5;
 }
 
-.logo-mark {
-  display: inline-flex;
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.35rem 1rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.main-nav a {
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  padding: 0.25rem 0.9rem;
+  border-radius: 999px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.main-nav a:hover {
   background: #bbe9db;
-  border: 1px solid #757a79;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
 }
 
-.masthead h1 {
-  font-size: clamp(3rem, 8vw, 6rem);
-  margin: 0;
-  letter-spacing: -0.04em;
+.site-content {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
-.masthead p {
-  font-size: 1.25rem;
-  max-width: 650px;
-  margin: 1rem auto 0;
+.site-footer {
+  border-top: 1px solid #9ba6a5;
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #757a79;
 }
+
+/* Home Page */
 
 .home-page {
-  max-width: 1180px;
-  margin: auto;
   padding: 0 1rem 4rem;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  border-bottom: none;
+}
+
+.nav-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.4rem 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.header-art {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.35rem;
+  align-items: center;
+}
+
+.main-nav a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+  padding: 0.25rem 0.65rem;
+}
+
+.masthead {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2.25rem;
+  border-bottom: 1px solid #9ba6a5;
+
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.masthead-copy {
+  min-width: 0;
+}
+
+.masthead h1 {
+  font-size: clamp(3rem, 5.2vw, 4.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  margin: 0;
+
+  white-space: nowrap;
+}
+
+.masthead p {
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin: 1.5rem 0 0 1rem;
+}
+
+.masthead-logo {
+  width: 360px;
+  height: auto;
+  display: block;
+  justify-self: start;
+  margin-left: -30px;
+
+  transform: translateY(20px);
+}
+
+/* Featured Article */
+
 .featured-article {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.35fr 0.95fr;
   gap: 2rem;
-  padding: 3rem 0;
+  padding: 2rem 0 3rem;
   border-bottom: 1px solid #9ba6a5;
 }
 
@@ -84,14 +190,17 @@ a {
 }
 
 .featured-article h2 {
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 0.95;
+  font-size: clamp(2.3rem, 4.8vw, 4.2rem);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
   margin: 0.5rem 0 1rem;
 }
 
 .featured-article p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
+
+/* Article Grid */
 
 .article-grid {
   display: grid;
@@ -112,10 +221,12 @@ a {
 }
 
 .article-card h3 {
-  font-size: 1.7rem;
+  font-size: 1.45rem;
   line-height: 1;
   margin: 0.5rem 0;
 }
+
+/* Article Page */
 
 .article-page {
   max-width: 820px;
@@ -130,7 +241,7 @@ a {
 }
 
 .article-page h1 {
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: 0.95;
   margin: 0.5rem 0 1rem;
 }
@@ -155,115 +266,206 @@ a {
   margin-top: 2.5rem;
 }
 
-.under-hood {
-  margin-top: 3rem;
+/* Specemin Notes */
+
+.specimen-notes {
+  margin-top: 4rem;
 }
 
-.under-hood button {
+.specimen-notes button {
   width: 100%;
   background: #aeccc6;
   border: 1px solid #757a79;
+  padding: 1.25rem;
+
+  font-family:
+    "Arial Narrow",
+    Arial,
+    sans-serif !important;
+
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+
+  margin: 0;
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.specimen-header {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  align-items: center;
+  gap: 0rem;
+}
+
+.specimen-notes h3 {
+  margin: 0;
+
+  font-family:
+    "Arial Narrow",
+    "Libre Baskerville",
+    Georgia,
+    serif;
+
+  font-size: 2.5rem !important;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+
+  font-weight: 700;
+}
+.specimen-title-wrap p {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+  color: #757a79;
+}
+
+.specimen-image {
+  width: 180px;
+  height: auto;
+  display: block;
+  justify-self: end;
+  margin-left: -40px;
+  mix-blend-mode: multiply;
+}
+
+.specimen-body {
+  border: 1px solid #9ba6a5;
+  border-top: none;
+  padding: 1rem 1.5rem 1.25rem;
+  background: #f8fbfa;
+
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+/* About Page */
+
+.about-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 4rem 1rem 5rem;
+}
+
+.about-section {
+  border-bottom: 1px solid #9ba6a5;
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.about-section h1,
+.about-section h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.95;
+  margin: 0 0 1rem;
+}
+
+.about-section p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+}
+
+.submission-form {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.submission-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.submission-form span {
+  color: #757a79;
+  font-size: 0.95rem;
+}
+
+.submission-form input,
+.submission-form textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.85rem;
+  border: 1px solid #9ba6a5;
+  background: white;
+}
+
+.submission-form button {
+  background: #bbe9db;
+  border: 1px solid #757a79;
   padding: 1rem;
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   cursor: pointer;
 }
 
-.under-hood div {
-  border: 1px solid #9ba6a5;
-  border-top: none;
-  padding: 1rem;
-  background: #f8fbfa;
+.submission-form button:hover {
+  background: #aeccc6;
 }
 
+/* Mobile */
+
 @media (max-width: 800px) {
+  .site-header {
+    position: relative;
+  }
+
+  .masthead,
   .featured-article,
   .article-grid {
     grid-template-columns: 1fr;
   }
-}
-.site-logo img {
-  height: 48px;
-  width: auto;
-  display: block;
-}
-.site-header {
-  background: white;
-  border-bottom: 1px solid #9ba6a5;
-}
 
-.nav-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0.85rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-
-
-.main-nav {
-  display: flex;
-  gap: 1.35rem;
-  align-items: center;
-}
-
-.main-nav a {
-  font-size: 0.95rem;
-  color: #111;
-}
-
-.masthead {
-  text-align: center;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 2rem 1rem 3rem;
-  border-bottom: 1px solid #9ba6a5;
-}
-
-.masthead-logo {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 0.0001rem;
-}
-
-.masthead h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-  line-height: 0.9;
-  letter-spacing: -0.055em;
-  margin: 0;
-}
-
-.masthead p {
-  max-width: 680px;
-  margin: 1.25rem auto 0;
-  font-size: 1.3rem;
-  line-height: 1.25;
-}
-
-.site-footer {
-  border-top: 1px solid #9ba6a5;
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  text-align: center;
-  color: #757a79;
+  .masthead-logo {
+    width: 190px;
+    justify-self: start;
   }
 
-.header-brand {
-  display: flex;
-  align-items: center;
-  gap: 0;
-
+  .masthead h1 {
+    font-size: 3rem;
+  }
 }
 
+.specimen-inner-header,
+.specimen-header {
+  display: grid;
+  grid-template-columns: auto 180px;
+  align-items: center;
+  justify-content: start;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
 
+.specimen-inner-header h3,
+.specimen-header h3,
+.specimen-notes h3 {
+  font-size: 3rem !important;
+  margin: 0 !important;
+  line-height: 0.95;
+}
 
+.specimen-image {
+  width: 180px !important;
+  height: auto;
+  justify-self: start;
+  margin-left: 0 !important;
+}
 
-.header-art {
-  height: 100px;
-  width: auto;
-  display: block;
-  margin-left: -10px;
+.specimen-content p:first-child {
+  margin-top: 0;
+}
+.specimen-content a {
+  font-style: italic;
+  transition:
+    font-weight 0.15s ease,
+    color 0.15s ease;
+}
+
+.specimen-content a:hover {
+  font-weight: 700;
 }

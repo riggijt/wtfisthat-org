@@ -7,22 +7,27 @@ export default function Home() {
   return (
     <main className="home-page">
       <section className="masthead">
-        
-        <img
-           src="/images/mantis2.png"
-            alt="The Spiny Flower Mantis logo"
-            className="masthead-logo"
-        />
-     <h1>The Spiny Flower Mantis</h1>
 
-  <p>
-    curious and occasionally useful expressions about you and me.
-  </p>
-</section>
+  <div className="masthead-copy">
+    <h1>The Spiny Flower Mantis</h1>
+
+    <p>
+      Curious and Occasionally Useful Expressions of Current Events.
+    </p>
+  </div>
+
+  <img
+    src="/images/mantis2.png"
+    alt="The Spiny Flower Mantis logo"
+    className="masthead-logo"
+  />
+
+    </section>
 
       {featured && (
         <a href={`/article/${featured.slug}`} className="featured-article">
           <img src={featured.image} alt={featured.title} />
+
           <div>
             <span>{featured.category}</span>
             <h2>{featured.title}</h2>
@@ -33,7 +38,11 @@ export default function Home() {
 
       <section className="article-grid">
         {rest.map((article) => (
-          <a key={article.slug} href={`/article/${article.slug}`} className="article-card">
+          <a
+            key={article.slug}
+            href={`/article/${article.slug}`}
+            className="article-card"
+          >
             <img src={article.image} alt={article.title} />
             <span>{article.category}</span>
             <h3>{article.title}</h3>

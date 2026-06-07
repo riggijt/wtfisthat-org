@@ -7,12 +7,42 @@ function parseFrontmatter(raw) {
   const content = match[2];
 
   const data = {};
+  const lines = frontmatter.split("\n");
 
-  frontmatter.split("\n").forEach(line => {
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    if (!line.trim()) continue;
+
+    const pipeMatch = line.match(/^([A-Za-z0-9_-]+):\s*\|\s*$/);
+
+    if (pipeMatch) {
+      const key = pipeMatch[1].trim();
+      const blockLines = [];
+
+      i++;
+
+      while (i < lines.length) {
+        const nextLine = lines[i];
+
+        if (/^[A-Za-z0-9_-]+:\s*/.test(nextLine)) {
+          i--;
+          break;
+        }
+
+        blockLines.push(nextLine);
+        i++;
+      }
+
+      data[key] = blockLines.join("\n").trim();
+      continue;
+    }
+
     const [key, ...rest] = line.split(":");
-    if (!key) return;
+    if (!key) continue;
+
     data[key.trim()] = rest.join(":").trim();
-  });
+  }
 
   return {
     ...data,
