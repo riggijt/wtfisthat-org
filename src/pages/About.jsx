@@ -29,7 +29,7 @@ export default function About() {
           would fit our genre, submit a query in the field below.
         </p>
 
-        <form className="submission-form" method="POST" action="/api/submit">
+        <form className="submission-form" method="POST" action="https://formspree.io/f/xaqzezyv">
           <label>
             Publishing Name <span>(Name you want on the article)</span>
             <input type="text" name="publishingName" required />
@@ -45,7 +45,7 @@ export default function About() {
             <textarea name="abstract" rows="8" maxLength="1500" required />
           </label>
 
-          <button type="submit">Submit to editor@wtfisthat-org</button>
+          <button type="submit">Submit to editor@wtfisthat.org</button>
         </form>
       </section>
     </main>
