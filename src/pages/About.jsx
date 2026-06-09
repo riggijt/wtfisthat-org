@@ -5,8 +5,9 @@ export default function About() {
         <h1>What is This?</h1>
         <p>
           The Spiny Flower Mantis was created as a platform for those of us who
-          often look at life reflected through current events and ask
+          look at life reflected through current events and sometimes ask
           “w-t-f is that?”. The mantis is an odd creature, and its array of physical attributes can be hard to ignore much less forget.
+          
           Let’s talk about it.
         </p>
       </section>

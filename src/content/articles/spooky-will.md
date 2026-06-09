@@ -61,7 +61,7 @@ specimenNotes: |
 
  
 
-Spooky Will has hit the marketplace with full force, freaking out software companies, hedge fund managers, and everyone else whose job involves processing information with computers. 
+Spooky Will has hit the marketplace with full force, freaking out software companies, hedge fund managers, and everyone else whose job involves processing information with a computer. 
 
 Will, the Great Grandson of television sensation Stooky Bill, began his career in 2017 when he assisted computer scientists with the development of a transformer model that dramatically changed the architecture of Artificial Intelligence Systems.  
 
