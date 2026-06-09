@@ -33,9 +33,6 @@ export default function Article() {
           {open && (
             <div className="specimen-body">
               <div className="specimen-inner-header">
-                <div>
-                  <h3>{article.specimenHeading || ""}</h3>
-                </div>
 
                 {article.specimenImage && (
                   <img

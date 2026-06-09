@@ -325,11 +325,11 @@ a {
 }
 
 .specimen-image {
-  width: 180px;
+  width: 200x;
   height: auto;
   display: block;
   justify-self: end;
-  margin-left: -40px;
+  margin-left: 0px;
   mix-blend-mode: multiply;
 }
 
@@ -450,7 +450,7 @@ a {
 }
 
 .specimen-image {
-  width: 180px !important;
+  width: 220px !important;
   height: auto;
   justify-self: start;
   margin-left: 0 !important;

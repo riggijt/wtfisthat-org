@@ -1,7 +1,7 @@
 ---
 id: inflation-dragon
 title: Inflationary Dragon Announces Retirement; Citing AI Trends, Younger Competition
-excerpt: After 52 Years Wilburn has decided to hang it up. 
+excerpt: After 52 Years Wilburn has Decided to Hang it up. 
 image: /images/dragon.png
 date: 2026-04-24
 specimenImage: /images/F-U_mantis.png

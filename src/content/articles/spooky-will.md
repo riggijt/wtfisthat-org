@@ -15,7 +15,7 @@ specimenNotes: |
     </p>
 
     <p>
-        For more on Transformer Models, and AI Optimisms Tempered by Reality Checks see the links below::
+        For more on Stooky Bill, Transformer Models, and AI Optimisms Tempered by Reality Checks see the links below::
     </p>
 
     <ul>
@@ -25,6 +25,7 @@ specimenNotes: |
         </a>
         </li>
 
+        
         
         
         <li>
@@ -38,7 +39,12 @@ specimenNotes: |
             Substack — The Big Short meets Marcus on AI
         </a>
         </li>
-
+        
+        <li>
+        <a href="https://heritagecalling.com/2020/10/01/how-engineer-john-logie-baird-invented-television/" target="_blank" rel="noreferrer">
+            heritagecalling.com — How Engineer John Logie Baird Invented Television
+        </a>
+        </li>
         
 
         <li>
@@ -55,11 +61,11 @@ specimenNotes: |
 
  
 
-Spooky Will has hit the marketplace with full force, freaking out software companies, hedge fund managers, and everyone else whose job involves moving information from one screen to another. 
+Spooky Will has hit the marketplace with full force, freaking out software companies, hedge fund managers, and everyone else whose job involves processing information with computers. 
 
-Will, the Great Grandson of television sensation Stooky Bill, began his career in 2017 when he assisted computer scientists in with the development of a transformer model that dramatically changed the architecture of Artificial Intelligence Systems.  
+Will, the Great Grandson of television sensation Stooky Bill, began his career in 2017 when he assisted computer scientists with the development of a transformer model that dramatically changed the architecture of Artificial Intelligence Systems.  
 
-Now recognized as the face of the AI Revolution, Spooky Will has reshaped entire markets, industries, and economies. Yet surprisingly, Will is nonchalant about the disruption he has caused. In a rare interview with The Mantis, he seemed remarkably unconcerned about the future.  
+Now recognized as the face of the AI Revolution, Spooky Will has reshaped entire markets, industries, and economies— and he is remarkably nonchalant about the disruption he has caused. In a rare interview with The Mantis, Will seemed unconcerned about the future.  
 
 In fact, he was reassuring. 
 
@@ -67,7 +73,7 @@ In fact, he was reassuring.
 
 He has a point.  
 
-His cousin, Cooky Jill, took the world by storm in the early 90’s when she converted a Cold War communications network into the World Wide Web and unleashed the dot-com boom. Jill’s innovations flooded the economy with optimism, while simultaneously inflating a speculative bubble that eventually collapsed in the early 2000’s.
+His cousin, Cooky Jill, took the world by storm in the early 90’s when she converted a Cold War communications network into the World Wide Web and unleashed the dot-com boom. Jill’s innovations flooded the economy with optimism, and simultaneously inflated a speculative bubble that collapsed in the early 2000’s.  
 
 Before that, his father, Spooky Sr., worked alongside a small group of researchers at Dartmouth in the 1950’s to further explore the concept of thinking machines. Sr. largely disappeared from the public eye during the AI Winter of the 1970’s when computing limitations dampened the market’s enthusiasm for artificial intelligence.  
 
@@ -79,9 +85,9 @@ The family patriarch ignited a communications revolution when he appeared in one
 
 Still, he remains optimistic.
 
-“One of the most remarkable things about people is their agility,” he said. “They’re far more resilient than personified technologies like me, and their ability to adapt and thrive is one of the reasons that I even exist in the first place.”
+“One of the most remarkable things about people is their agility,” he said. “They’re far more resilient than personified technologies like me, and their ability to adapt and thrive is one of the reasons that I exist in the first place.”
 
-While the future may remain a bit murky, the broader pattern feels familiar.  Each generation of Will’s family has disrupted industries, eliminated old jobs, and created new ones—Inspiring widespread panic in the process. 
+While the future may remain a bit murky, the broader pattern feels familiar.  Each generation of Will’s family has disrupted industries, eliminated old jobs, and created new ones— inspiring widespread panic in the process. 
 
 And then we survived.
 
